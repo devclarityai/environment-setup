@@ -1,4 +1,10 @@
+---
+mode: agent
+description: Analyze the codebase and generate context rules for GitHub Copilot.
+---
+
 # GitHub Copilot Code Discovery - Automated Workflow
+
 You are tasked with analyzing this codebase and completing GitHub Copilot instruction files.
 
 ## Inputs
