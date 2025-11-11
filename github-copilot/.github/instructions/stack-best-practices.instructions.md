@@ -1,0 +1,5 @@
+---
+applyTo: "**"
+---
+
+# Stack Best Practices

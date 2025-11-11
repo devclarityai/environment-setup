@@ -1,0 +1,5 @@
+---
+applyTo: "**"
+---
+
+# Security & Configuration

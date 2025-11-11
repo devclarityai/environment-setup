@@ -20,7 +20,7 @@ Use this template to break a feature spec into sprint-ready engineering tasks.
 
 | ID | Title | Owner | Effort | Depends on |
 |----|-------|-------|--------|------------|
-| T1 | …     |       | M      | T0         |
+| T1 | ...   |       | M      | T0         |
 
 ### Tasks
 
@@ -35,7 +35,7 @@ Use this template to break a feature spec into sprint-ready engineering tasks.
 - **Docs:**
 
 **T2:**
-- …
+- ...
 
 ### Milestones
 

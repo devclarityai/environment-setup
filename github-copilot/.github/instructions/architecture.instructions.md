@@ -1,0 +1,5 @@
+---
+applyTo: "**"
+---
+
+# Architecture & Patterns

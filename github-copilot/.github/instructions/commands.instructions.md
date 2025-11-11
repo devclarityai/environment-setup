@@ -1,0 +1,5 @@
+---
+applyTo: "**"
+---
+
+# Commands & Scripts
