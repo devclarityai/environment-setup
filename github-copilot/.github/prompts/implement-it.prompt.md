@@ -2,14 +2,14 @@ Use this template to turn a user story into a concrete plan, skeletons, and test
 
 ## INPUTS
 
-- Ticket - the user story or ticket to implement
-- (optional) Non-functional requirements
-- (optional) Acceptance criteria
-- (optional) Code - existing code context
+- PROJECT_CONTEXT
+- USER_STORY
+- (optional) NON_FUNCTIONAL_REQS
+- (optional) ACCEPTANCE_CRITERIA
 
 ## INSTRUCTIONS
 
-1. Extract goals, actors, and constraints from the ticket.
+1. Extract goals, actors, and constraints from USER_STORY.
 2. Make explicit assumptions and edge cases.
 3. Produce a step-by-step plan across affected layers:
    - Frontend (web/mobile applications)
@@ -32,12 +32,12 @@ Use this template to turn a user story into a concrete plan, skeletons, and test
 
 ### Assumptions & constraints
 
-- …
+- ...
 
 ### Step-by-step plan
 
-1. …
-2. …
+1. ...
+2. ...
 
 ### Architecture impact
 
@@ -70,8 +70,8 @@ Use this template to turn a user story into a concrete plan, skeletons, and test
 
 ### Risks & mitigations
 
-- …
+- ...
 
 ### Definition of done
 
-- …
+- ...

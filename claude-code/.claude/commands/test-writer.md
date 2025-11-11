@@ -28,7 +28,7 @@ Use this template to generate thorough tests for a function or module.
 
 | Case | Inputs | Setup | Expected |
 |------|--------|-------|----------|
-| 1    | …      | …     | …        |
+| 1    | ...    | ...   | ...      |
 
 ### Unit tests (sketches)
 
@@ -65,4 +65,4 @@ Use this template to generate thorough tests for a function or module.
 
 ### Run commands
 
-- …
+- ...

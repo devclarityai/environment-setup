@@ -1,11 +1,12 @@
 Use this template to explain code at a high level and surface gotchas.
 
 ## INPUTS
-- Code - the code to explain
-- (optional) File path
+- PROJECT_CONTEXT
+- CODE
+- (optional) FILE_PATH
 
 ## INSTRUCTIONS
-1. Read the provided code.
+1. Read code in the context of PROJECT_CONTEXT.
 2. Describe what it does in clear, concise terms. Prefer bullets.
 3. Summarize data flow, side effects, external calls, and I/O.
 4. Note domain concepts relevant to the business/application context.
@@ -17,7 +18,7 @@ Use this template to explain code at a high level and surface gotchas.
 ## OUTPUT FORMAT
 
 ### What this code does
-- …
+- ...
 
 ### How it works (flow)
 - **Inputs:**
@@ -31,7 +32,7 @@ Use this template to explain code at a high level and surface gotchas.
 - **Databases/tables/queues touched:**
 
 ### Assumptions
-- …
+- ...
 
 ### Gotchas & risks
 - **Concurrency:**
@@ -45,4 +46,4 @@ Use this template to explain code at a high level and surface gotchas.
 - **Follow-ups:**
 
 ### Example trace (pseudo)
-…
+...
