@@ -4,6 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 # Overview
 
+# Commands
+
 # Architecture & Patterns
 
 # Stack Best Practices
