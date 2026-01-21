@@ -1,10 +1,10 @@
 # Process Directory List
 
-Process the `directory-instructions.json` file and generate instruction files for each directory by invoking the `/generate-instructions` command.
+Process the `directory-instructions.json` file and generate CLAUDE.md files for each directory by invoking the `/generate-instructions` command.
 
 ## Purpose
 
-This command orchestrates the batch generation of CLAUDE.md instruction files for multiple directories in the monorepo. It reads the directory list JSON file and systematically processes each directory item.
+This command orchestrates the batch generation of CLAUDE.md files for multiple directories in the monorepo. It reads the directory list JSON file and systematically processes each directory item.
 
 ## Input
 
@@ -16,7 +16,7 @@ Reads from `directory-instructions.json` in the project root, which has this str
     {
       "id": "1",
       "directory": "app/controllers",
-      "output_file": "controllers.instructions.md",
+      "output_file": "CLAUDE.md",
       "status": "pending",
       "analyzed_at": null
     }
@@ -52,15 +52,15 @@ Steps:
 7. Write the final JSON back
 8. If any errors occur, set status="error" instead
 
-The /generate-instructions command will analyze the directory and create the instruction file.
+The /generate-instructions command will analyze the directory and create the CLAUDE.md file.
 ```
 
 #### Launch All Agents in Parallel
 **CRITICAL**: Spawn ALL sub-agents in a **single message** by making multiple Task tool calls:
 ```
-Task(subagent_type="general-purpose", prompt="Process app/controllers...", description="Generate controllers instructions")
-Task(subagent_type="general-purpose", prompt="Process app/models...", description="Generate models instructions")
-Task(subagent_type="general-purpose", prompt="Process app/services...", description="Generate services instructions")
+Task(subagent_type="general-purpose", prompt="Process app/controllers...", description="Generate controllers CLAUDE.md")
+Task(subagent_type="general-purpose", prompt="Process app/models...", description="Generate models CLAUDE.md")
+Task(subagent_type="general-purpose", prompt="Process app/services...", description="Generate services CLAUDE.md")
 ... (one Task call for each pending directory)
 ```
 
