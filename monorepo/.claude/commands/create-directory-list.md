@@ -1,11 +1,11 @@
-# Create Directory List for Instructions
+# Create Directory List for CLAUDE.md Files
 
-Interactively discover directories in the monorepo that should have Copilot instruction files generated.
+Interactively discover directories in the monorepo that should have CLAUDE.md files generated.
 
 ## Steps
 
 ### 1. Scan the Monorepo Structure
-Examine the codebase to identify directories that would benefit from instruction files. Look for:
+Examine the codebase to identify directories that would benefit from CLAUDE.md files. Look for:
 - `packages/*` - Shared packages/libraries
 - `apps/*` - Application directories
 - `services/*` - Microservices
@@ -16,7 +16,7 @@ Examine the codebase to identify directories that would benefit from instruction
 ### 2. Propose Directories
 Present a list of discovered directories with brief descriptions:
 ```
-Proposed directories for instruction files:
+Proposed directories for CLAUDE.md files:
 
 1. packages/api - REST API client library
 2. packages/ui - Shared UI components
@@ -43,26 +43,20 @@ Once confirmed, create `directory-instructions.json` with this structure:
     {
       "id": "1",
       "directory": "packages/api",
-      "output_file": "api.instructions.md",
+      "output_file": "CLAUDE.md",
       "status": "pending",
       "analyzed_at": null
     },
     {
       "id": "2",
       "directory": "packages/ui",
-      "output_file": "ui.instructions.md",
+      "output_file": "CLAUDE.md",
       "status": "pending",
       "analyzed_at": null
     }
   ]
 }
 ```
-
-## Output File Naming Convention
-- Use the **last segment** of the directory path as the base name
-- Example: `packages/api` → `api.instructions.md`
-- Example: `apps/web-dashboard` → `web-dashboard.instructions.md`
-- If duplicates exist, prefix with parent: `packages-api.instructions.md`
 
 ## Guidelines
 - Only include directories with substantial code (skip config-only dirs)

@@ -1,4 +1,4 @@
-# Generate Directory Instructions
+# Generate CLAUDE.md File
 
 Analyze a specific directory in the monorepo and create a CLAUDE.md file with context for Claude Code.
 
