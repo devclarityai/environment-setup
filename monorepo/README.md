@@ -37,7 +37,7 @@ Choose one of two approaches:
 Run `/process-directory-list` in your IDE. This spawns parallel sub-agents to process all directories simultaneously.
 
 **Pros**: Faster (parallel execution), no additional dependencies
-**Cons**: Requires Claude Code CLI with Task tool support
+**Cons**: Claude Code exclusive
 
 #### Option B: Bash Script (Sequential Processing)
 
