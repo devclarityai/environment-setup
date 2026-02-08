@@ -29,9 +29,16 @@
 - Data validation rules
 - Database migration patterns
 
-# Configuration, Security, and Authentication
+# Security & Configuration
 - Environment variable management
 - Secrets handling (1Password, vaults, etc.)
 - Authentication / authorization flow
 - API security patterns
 - Compliance requirements
+
+# Commands & Scripts
+- Build and dev scripts
+- Test commands
+- Database migration commands
+- Deployment scripts
+- Custom CLI tools

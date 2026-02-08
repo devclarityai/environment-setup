@@ -1,4 +1,4 @@
-# Homework before training
+# Homework Before Training
 
 1. Checkout a branch called `context-rules`.
 
@@ -13,13 +13,14 @@
 4. Cleanup the file for human readability.
 
 ```text
-Cleanup our @CLAUDE.md file to use the following six headers. Keep the content clear, but concise.
+Cleanup our @CLAUDE.md file to use the following seven headers. Keep the content clear, but concise.
 ## Overview
 ## Architecture & Patterns
 ## Stack Best Practices
 ## Anti-Patterns
 ## Data Models
-## Configuration, Security, and Authentication
+## Security & Configuration
+## Commands & Scripts
 ```
 
 5. Copy the `.claude/commands` directory into your repo. Customize at least one command for your codebase.

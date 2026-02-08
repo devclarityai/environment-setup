@@ -1,17 +1,46 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+*Sub-bullets serve as examples and should be replaced when filling out the file. Headers should be maintained.*
 
-# Overview
+## Overview
+- Business domain and key concepts
+- Primary user types
+- Integration points with other systems
+- Key business workflows supported
 
-# Commands
+## Architecture & Patterns
+- Folder structure and module boundaries
+- Layer dependencies
+- Communication patterns
+- External service integrations
 
-# Architecture & Patterns
+## Stack Best Practices
+- Language-specific idioms and conventions
+- Framework-specific patterns
+- Dependency injection patterns
+- Error handling and validation patterns
 
-# Stack Best Practices
+## Anti-Patterns
+- Logging of sensitive data
+- Hard coded secrets
+- Non-parameterized SQL queries
 
-# Anti-Patterns
+## Data Models
+- Core domain entities and relationships
+- Key value objects and DTOs
+- Data validation rules
+- Database migration patterns
 
-# Data Models
+## Security & Configuration
+- Environment variable management
+- Secrets handling (1Password, vaults, etc.)
+- Authentication / authorization flow
+- API security patterns
+- Compliance requirements
 
-# Configuration, Security, and Authentication
+## Commands & Scripts
+- Build and dev scripts
+- Test commands
+- Database migration commands
+- Deployment scripts
+- Custom CLI tools

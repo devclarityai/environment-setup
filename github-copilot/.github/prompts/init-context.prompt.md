@@ -1,5 +1,5 @@
 ---
-mode: agent
+agent: agent
 description: Analyze the codebase and generate context rules for GitHub Copilot.
 ---
 
