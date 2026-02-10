@@ -1,3 +1,8 @@
+---
+name: "file-cleaner"
+description: "Improve readability of a source file without changing behavior"
+---
+
 Use this template to improve readability of a single source file without changing behavior.
 
 ## INPUTS

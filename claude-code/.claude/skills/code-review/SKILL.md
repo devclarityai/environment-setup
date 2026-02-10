@@ -1,3 +1,8 @@
+---
+name: "code-review"
+description: "Review a PR diff with focused, actionable feedback"
+---
+
 Use this template to review a PR diff with focused, actionable feedback.
 
 ## INPUTS

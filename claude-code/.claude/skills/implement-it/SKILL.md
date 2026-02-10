@@ -1,3 +1,8 @@
+---
+name: "implement-it"
+description: "Turn a user story into a concrete plan, skeletons, and tests"
+---
+
 Use this template to turn a user story into a concrete plan, skeletons, and tests.
 
 ## INPUTS

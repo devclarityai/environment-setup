@@ -1,3 +1,8 @@
+---
+name: "test-writer"
+description: "Generate thorough tests for a function or module"
+---
+
 Use this template to generate thorough tests for a function or module.
 
 ## INPUTS

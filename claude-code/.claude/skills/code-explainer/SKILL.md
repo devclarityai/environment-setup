@@ -1,3 +1,8 @@
+---
+name: "code-explainer"
+description: "Explain code at a high level and surface gotchas"
+---
+
 Use this template to explain code at a high level and surface gotchas.
 
 ## INPUTS
