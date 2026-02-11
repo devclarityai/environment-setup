@@ -1,10 +1,15 @@
+---
+name: "process-directory-list"
+description: "Batch-process directory-instructions.json to generate CLAUDE.md files in parallel"
+---
+
 # Process Directory List
 
-Process the `directory-instructions.json` file and generate CLAUDE.md files for each directory by invoking the `/generate-instructions` command.
+Process the `directory-instructions.json` file and generate CLAUDE.md files for each directory by invoking the `/generate-instructions` skill.
 
 ## Purpose
 
-This command orchestrates the batch generation of CLAUDE.md files for multiple directories in the monorepo. It reads the directory list JSON file and systematically processes each directory item.
+This skill orchestrates the batch generation of CLAUDE.md files for multiple directories in the monorepo. It reads the directory list JSON file and systematically processes each directory item.
 
 ## Input
 
@@ -52,7 +57,7 @@ Steps:
 7. Write the final JSON back
 8. If any errors occur, set status="error" instead
 
-The /generate-instructions command will analyze the directory and create the CLAUDE.md file.
+The /generate-instructions skill will analyze the directory and create the CLAUDE.md file.
 ```
 
 #### Launch All Agents in Parallel
@@ -78,7 +83,7 @@ Launched 7 sub-agents in parallel
 
 ## Usage Notes
 
-- **Idempotent**: Running this command multiple times will only process `pending` items
+- **Idempotent**: Running this skill multiple times will only process `pending` items
 - **Resumable**: If interrupted, re-run to continue from where it left off
 - **Parallel Processing**: Spawns multiple sub-agents simultaneously, one per directory
 - **Status tracking**: Each sub-agent updates the JSON file for its directory independently
@@ -100,8 +105,8 @@ cat directory-instructions.json
 ## Important
 
 - **Use the Task tool** to spawn sub-agents for parallel processing
-- Each sub-agent should invoke `/generate-instructions` slash command directly - do NOT reimplement its logic
+- Each sub-agent should invoke `/generate-instructions` skill directly - do NOT reimplement its logic
 - Each directory gets its own dedicated sub-agent for independent processing
 - Sub-agents must update the JSON file after their directory completes
-- Preserve the JSON structure and formatting when updating the file. Do not add entries. 
+- Preserve the JSON structure and formatting when updating the file. Do not add entries.
 - Launch ALL sub-agents in a SINGLE message with multiple Task tool calls for true parallelism

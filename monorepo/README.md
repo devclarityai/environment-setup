@@ -18,7 +18,7 @@ Generate context files for AI coding assistants across directories in a monorepo
 
 2. Copy the prompts from this repo to your repo:
    - **For Copilot**: Copy `.github/prompts/` to your repo's `.github/prompts/`
-   - **For Claude**: Copy `.claude/commands/` to your repo's `.claude/commands/`
+   - **For Claude**: Copy `.claude/skills/` to your repo's `.claude/skills/`
 
 3. Copy `generate-all-instructions.sh` to your repo root 
 
@@ -32,7 +32,7 @@ Review the proposed directories, add or remove as needed, and confirm to generat
 
 Choose one of two approaches:
 
-#### Option A: Slash Command (Parallel Processing)
+#### Option A: Skill (Parallel Processing)
 
 Run `/process-directory-list` in your IDE. This spawns parallel sub-agents to process all directories simultaneously.
 

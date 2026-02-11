@@ -1,3 +1,8 @@
+---
+name: "generate-instructions"
+description: "Analyze a monorepo directory and generate a CLAUDE.md file with context for Claude Code"
+---
+
 # Generate CLAUDE.md File
 
 Analyze a specific directory in the monorepo and create a CLAUDE.md file with context for Claude Code.

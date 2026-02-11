@@ -1,3 +1,8 @@
+---
+name: "refactor"
+description: "Refactor legacy code toward a stated goal with safety"
+---
+
 Use this template to refactor legacy code toward a stated goal, with safety.
 
 ## INPUTS

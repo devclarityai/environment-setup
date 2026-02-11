@@ -25,7 +25,7 @@ done
 if [[ "$CLI_TOOL" == "copilot" ]]; then
     PROMPT_FILE="$SCRIPT_DIR/.github/prompts/generate-instructions.prompt.md"
 else
-    PROMPT_FILE="$SCRIPT_DIR/.claude/commands/generate-instructions.md"
+    PROMPT_FILE="$SCRIPT_DIR/.claude/skills/generate-instructions/SKILL.md"
 fi
 
 PROMPT_TEMPLATE=$(cat "$PROMPT_FILE")

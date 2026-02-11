@@ -1,3 +1,8 @@
+---
+name: "task-creator"
+description: "Break a feature spec into sprint-ready engineering tasks"
+---
+
 Use this template to break a feature spec into sprint-ready engineering tasks.
 
 ## INPUTS

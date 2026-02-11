@@ -23,6 +23,6 @@ Cleanup our @CLAUDE.md file to use the following seven headers. Keep the content
 ## Commands & Scripts
 ```
 
-5. Copy the `.claude/commands` directory into your repo. Customize at least one command for your codebase.
+5. Copy the `.claude/skills` directory into your repo. Customize at least one skill for your codebase.
 
-6. Push your CLAUDE.md file & slash commands to your repo.
+6. Push your CLAUDE.md file & skills to your repo.
