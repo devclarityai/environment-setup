@@ -1,3 +1,8 @@
+---
+name: "create-directory-list"
+description: "Interactively discover monorepo directories and create a JSON list for CLAUDE.md generation"
+---
+
 # Create Directory List for CLAUDE.md Files
 
 Interactively discover directories in the monorepo that should have CLAUDE.md files generated.
