@@ -1,5 +1,5 @@
 ---
-agent: agent
+name: generate-instructions
 description: Analyze a directory and generate consolidated Cursor rules.
 ---
 

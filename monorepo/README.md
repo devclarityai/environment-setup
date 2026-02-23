@@ -4,7 +4,7 @@ Generate context files for AI coding assistants across directories in a monorepo
 
 ## Requirements
 
-- **GitHub Copilot CLI** or **Claude Code CLI**
+- **GitHub Copilot CLI**, **Claude Code CLI**, or **Cursor**
 - **jq** (only required for bash script approach) - [Download here](https://jqlang.github.io/jq/download/)
 
 ## Quick Start
@@ -16,21 +16,22 @@ Generate context files for AI coding assistants across directories in a monorepo
    git checkout -b monorepo-context
    ```
 
-2. Copy the prompts from this repo to your repo:
+2. Copy the skills/prompts from this repo to your repo:
    - **For Copilot**: Copy `.github/prompts/` to your repo's `.github/prompts/`
    - **For Claude**: Copy `.claude/skills/` to your repo's `.claude/skills/`
+   - **For Cursor**: Copy `.cursor/skills/` to your repo's `.cursor/skills/`
 
-3. Copy `generate-all-instructions.sh` to your repo root 
+3. Copy `generate-all-instructions.sh` to your repo root (optional for Cursor)
 
 ### Step 2: Create Directory List
 
-Run `/create-directory-list` in your IDE (GitHub Copilot or Claude Code) to allow AI to interactively discover directories and create `directory-instructions.json`.
+Run `/create-directory-list` in your IDE (GitHub Copilot, Claude Code, or Cursor) to interactively discover directories and create `directory-instructions.json`.
 
 Review the proposed directories, add or remove as needed, and confirm to generate the file.
 
 ### Step 3: Generate Instructions
 
-Choose one of two approaches:
+Choose one of three approaches:
 
 #### Option A: Skill (Parallel Processing)
 
@@ -52,6 +53,13 @@ Run `/process-directory-list` in your IDE. This spawns parallel sub-agents to pr
 **Pros**: Works with both Copilot and Claude, predictable sequential execution
 **Cons**: Slower (sequential), requires jq
 
+#### Option C: Manual (Cursor)
+
+Run `/generate-instructions` for each directory listed in `directory-instructions.json`.
+
+**Pros**: Works with Cursor, no additional dependencies
+**Cons**: Manual, one directory at a time
+
 ### Step 4: Review and Commit
 
 Review the generated files and commit them to your repo.
@@ -60,3 +68,4 @@ Review the generated files and commit them to your repo.
 
 - **Copilot**: `.github/instructions/{DIR_NAME}.instructions.md`
 - **Claude**: `{DIR}/CLAUDE.md`
+- **Cursor**: `.cursor/rules/{DIR_NAME}.mdc`

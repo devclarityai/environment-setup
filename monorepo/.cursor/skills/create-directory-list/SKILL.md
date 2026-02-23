@@ -1,5 +1,5 @@
 ---
-agent: agent
+name: create-directory-list
 description: Discover directories and create the tracking JSON for instruction generation.
 ---
 
