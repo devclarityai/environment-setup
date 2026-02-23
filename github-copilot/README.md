@@ -14,6 +14,6 @@
 
 5. Cleanup the file for human readability
 
-6. Customize a slash command
+6. Customize a prompt
 
 7. Push this to the repo
