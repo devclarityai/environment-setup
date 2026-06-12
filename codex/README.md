@@ -3,7 +3,7 @@
 ## Step 1: Install skills
 
 ```bash
-npx skills add jmsaucier/environment-setup -a codex
+npx skills add devclarityai/environment-setup -a codex
 ```
 
 Pick the core skills you want (code-review, implement-it, refactor, etc.).
@@ -40,7 +40,7 @@ Cleanup our @AGENTS.md file to use the following seven headers. Keep the content
 
 ## Agent install path
 
-| What | Path |
-|------|------|
-| Skills (via npx skills) | `.agents/skills/` |
-| Context file | `AGENTS.md` (repo root) |
+| What                    | Path                    |
+| ----------------------- | ----------------------- |
+| Skills (via npx skills) | `.agents/skills/`       |
+| Context file            | `AGENTS.md` (repo root) |

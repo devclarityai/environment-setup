@@ -3,7 +3,7 @@
 ## Step 1: Install skills
 
 ```bash
-npx skills add jmsaucier/environment-setup -a cursor
+npx skills add devclarityai/environment-setup -a cursor
 ```
 
 Pick the skills you want (at minimum: `init-context` plus any core skills).
@@ -39,7 +39,7 @@ Gather more context about <AREA>. Summarize it for me and then update our @RULES
 
 ## Agent install path
 
-| What | Path |
-|------|------|
+| What                    | Path              |
+| ----------------------- | ----------------- |
 | Skills (via npx skills) | `.agents/skills/` |
-| Rules (copy manually) | `.cursor/rules/` |
+| Rules (copy manually)   | `.cursor/rules/`  |

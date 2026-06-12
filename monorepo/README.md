@@ -12,7 +12,7 @@ Generate context files for AI coding assistants across directories in a monorepo
 ### Step 1: Install skills
 
 ```bash
-npx skills add jmsaucier/environment-setup \
+npx skills add devclarityai/environment-setup \
   --skill create-directory-list \
   --skill generate-instructions \
   --skill process-directory-list \
@@ -68,9 +68,9 @@ Review the generated files and commit them to your repo.
 
 ## Output
 
-| Agent | Output path |
-|-------|-------------|
-| Copilot | `.github/instructions/{DIR_NAME}.instructions.md` |
-| Claude Code | `{DIR}/CLAUDE.md` |
-| Codex | `{DIR}/AGENTS.md` |
-| Cursor | `.cursor/rules/{DIR_NAME}.mdc` |
+| Agent       | Output path                                       |
+| ----------- | ------------------------------------------------- |
+| Copilot     | `.github/instructions/{DIR_NAME}.instructions.md` |
+| Claude Code | `{DIR}/CLAUDE.md`                                 |
+| Codex       | `{DIR}/AGENTS.md`                                 |
+| Cursor      | `.cursor/rules/{DIR_NAME}.mdc`                    |

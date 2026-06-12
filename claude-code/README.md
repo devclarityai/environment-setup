@@ -3,7 +3,7 @@
 ## Step 1: Install skills
 
 ```bash
-npx skills add jmsaucier/environment-setup -a claude-code
+npx skills add devclarityai/environment-setup -a claude-code
 ```
 
 Pick the core skills you want (code-review, implement-it, refactor, etc.).
@@ -43,7 +43,7 @@ Use [`CLAUDE.md`](CLAUDE.md) in this folder as a starting template if needed.
 
 ## Agent install path
 
-| What | Path |
-|------|------|
-| Skills (via npx skills) | `.claude/skills/` |
-| Context file | `CLAUDE.md` (repo root) |
+| What                    | Path                    |
+| ----------------------- | ----------------------- |
+| Skills (via npx skills) | `.claude/skills/`       |
+| Context file            | `CLAUDE.md` (repo root) |

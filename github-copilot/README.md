@@ -3,7 +3,7 @@
 ## Step 1: Install skills
 
 ```bash
-npx skills add jmsaucier/environment-setup -a github-copilot
+npx skills add devclarityai/environment-setup -a github-copilot
 ```
 
 Pick the core skills you want (code-review, implement-it, refactor, etc.).
@@ -40,8 +40,8 @@ Gather more context about <AREA>. Summarize it for me and then update our @<FILE
 
 ## Agent install paths
 
-| What | Path |
-|------|------|
-| Skills (via npx skills) | `.agents/skills/` |
+| What                         | Path                    |
+| ---------------------------- | ----------------------- |
+| Skills (via npx skills)      | `.agents/skills/`       |
 | Instructions (copy manually) | `.github/instructions/` |
-| Prompts (copy manually) | `.github/prompts/` |
+| Prompts (copy manually)      | `.github/prompts/`      |
