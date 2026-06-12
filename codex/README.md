@@ -1,30 +1,46 @@
-# Homework Before Training
+# Codex Homework
 
-1. Checkout a branch called `context-rules`.
+## Step 1: Install skills
 
-2. Add [`AGENTS.md`](/Users/markhutter/code/devclarity/environment-setup/codex/AGENTS.md)
-   to the root of your repo.
+```bash
+npx skills add jmsaucier/environment-setup -a codex
+```
 
-3. Improve context in key areas from inside Codex.
+Pick the core skills you want (code-review, implement-it, refactor, etc.).
 
-   ```text
-   Gather more context about AREA. Summarize it for me and then update our @AGENTS.md file.
-   ```
+Skills install to `.agents/skills/` in your project.
 
-4. Cleanup the file for human readability.
+## Step 2: Add AGENTS.md
 
-   ```text
-   Cleanup our @AGENTS.md file to use the following seven headers. Keep the content clear, but concise.
-   ## Overview
-   ## Architecture & Patterns
-   ## Stack Best Practices
-   ## Anti-Patterns
-   ## Data Models
-   ## Security & Configuration
-   ## Commands & Scripts
-   ```
+Add [`AGENTS.md`](AGENTS.md) to the root of your repo.
 
-5. Copy the `.codex/skills` directory into your repo. Customize at least one
-   skill for your codebase.
+## Step 3: Improve context
 
-6. Push your `AGENTS.md` file and skills to your repo.
+```text
+Gather more context about AREA. Summarize it for me and then update our @AGENTS.md file.
+```
+
+## Step 4: Cleanup the file
+
+```text
+Cleanup our @AGENTS.md file to use the following seven headers. Keep the content clear, but concise.
+## Overview
+## Architecture & Patterns
+## Stack Best Practices
+## Anti-Patterns
+## Data Models
+## Security & Configuration
+## Commands & Scripts
+```
+
+## Step 5: Customize and push
+
+1. Customize at least one skill for your codebase
+2. Push your AGENTS.md file and skills to your repo
+
+## Agent install path
+
+| What | Path |
+|------|------|
+| Skills (via npx skills) | `.agents/skills/` |
+| Context file | `AGENTS.md` (repo root) |

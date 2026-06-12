@@ -1,0 +1,16 @@
+{
+  "name": "environment-setup-skills",
+  "skills": [
+    "./skills/core/code-review",
+    "./skills/core/code-explainer",
+    "./skills/core/file-cleaner",
+    "./skills/core/implement-it",
+    "./skills/core/refactor",
+    "./skills/core/task-creator",
+    "./skills/core/test-writer",
+    "./skills/cursor/init-context",
+    "./skills/monorepo/create-directory-list",
+    "./skills/monorepo/generate-instructions",
+    "./skills/monorepo/process-directory-list"
+  ]
+}

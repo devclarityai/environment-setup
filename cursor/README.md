@@ -1,21 +1,45 @@
-# Homework
+# Cursor Homework
 
-1. Create a new branch: `git checkout -b context-rules`
+## Step 1: Install skills
 
-2. Copy & paste the `rules` and `skills` directories into the `.cursor` directory
-    - Don't overwrite any instructions or prompts that already exist!
-    - Create the `.cursor` directory if it doesn't exist.
+```bash
+npx skills add jmsaucier/environment-setup -a cursor
+```
 
-3. Run: `/init-context`
+Pick the skills you want (at minimum: `init-context` plus any core skills).
 
-4. Improve context in key areas
+Skills install to `.agents/skills/` in your project.
 
-    ```text
-    Gather more context about <AREA>. Summarize it for me and then update our @RULES file.
-    ```
+## Step 2: Copy rules templates
 
-5. Cleanup the file for human readability
+Copy the `rules` directory into your project's `.cursor/` directory:
 
-6. Customize a skill
+```bash
+mkdir -p .cursor
+cp -r path/to/environment-setup/cursor/.cursor/rules .cursor/
+```
 
-7. Push this to the repo
+Do not overwrite rules that already exist in your repo.
+
+## Step 3: Run init-context
+
+Run `/init-context` to analyze your codebase and populate the rules files.
+
+## Step 4: Improve context
+
+```text
+Gather more context about <AREA>. Summarize it for me and then update our @RULES file.
+```
+
+## Step 5: Cleanup and customize
+
+1. Cleanup the rules files for human readability
+2. Customize at least one skill for your codebase
+3. Push to your repo
+
+## Agent install path
+
+| What | Path |
+|------|------|
+| Skills (via npx skills) | `.agents/skills/` |
+| Rules (copy manually) | `.cursor/rules/` |

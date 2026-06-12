@@ -1,16 +1,27 @@
-# Homework Before Training
+# Claude Code Homework
 
-1. Checkout a branch called `context-rules`.
+## Step 1: Install skills
 
-2. Run `/init` inside Claude Code in your repo.
+```bash
+npx skills add jmsaucier/environment-setup -a claude-code
+```
 
-3. Improve context in key areas
+Pick the core skills you want (code-review, implement-it, refactor, etc.).
 
-  ```text
-  Gather more context about AREA. Summarize it for me and then update our @CLAUDE.md file.
-  ```
+Skills install to `.claude/skills/` in your project.
 
-4. Cleanup the file for human readability.
+## Step 2: Initialize context
+
+1. Checkout a branch called `context-rules`
+2. Run `/init` inside Claude Code in your repo
+
+## Step 3: Improve context
+
+```text
+Gather more context about AREA. Summarize it for me and then update our @CLAUDE.md file.
+```
+
+## Step 4: Cleanup the file
 
 ```text
 Cleanup our @CLAUDE.md file to use the following seven headers. Keep the content clear, but concise.
@@ -23,6 +34,16 @@ Cleanup our @CLAUDE.md file to use the following seven headers. Keep the content
 ## Commands & Scripts
 ```
 
-5. Copy the `.claude/skills` directory into your repo. Customize at least one skill for your codebase.
+Use [`CLAUDE.md`](CLAUDE.md) in this folder as a starting template if needed.
 
-6. Push your CLAUDE.md file & skills to your repo.
+## Step 5: Customize and push
+
+1. Customize at least one skill for your codebase
+2. Push your CLAUDE.md file and skills to your repo
+
+## Agent install path
+
+| What | Path |
+|------|------|
+| Skills (via npx skills) | `.claude/skills/` |
+| Context file | `CLAUDE.md` (repo root) |
