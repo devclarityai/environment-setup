@@ -10,11 +10,18 @@ Use this template to review a PR diff with focused, actionable feedback.
 ## INSTRUCTIONS
 
 1. Scan PR_DIFF for correctness, style, security, and performance.
-2. Ground comments in PROJECT_CONTEXT (frameworks, languages, databases, messaging systems).
-3. Prefer specific inline suggestions with minimal working patches.
-4. Flag test gaps and missing docs. Propose concrete test cases.
-5. Label severity: Blocker, Major, Minor, Nit.
-6. Keep lines ≤80 chars.
+2. Ground comments in PROJECT_CONTEXT.
+3. Apply repository-specific checks for this project style:
+  - This repo segment is documentation-first under .github assets.
+  - Instruction files should stay concise (target: <=40 lines each).
+  - Keep applyTo frontmatter valid in instruction files.
+  - Do not allow absolute local file paths in shared docs.
+  - Do not allow invented commands that are not verified in-repo.
+  - Keep prompt and matching skill expectations aligned.
+4. Prefer specific inline suggestions with minimal working patches.
+5. Flag test gaps and missing docs. Propose concrete test cases.
+6. Label severity: Blocker, Major, Minor, Nit.
+7. Keep lines <=80 chars.
 
 ## OUTPUT FORMAT
 
@@ -52,6 +59,12 @@ Use this template to review a PR diff with focused, actionable feedback.
 - **Third-party integrations:**
 - **Data privacy/compliance:**
 
+### Context Quality
+- **Instruction clarity and specificity:**
+- **Prompt/skill consistency:**
+- **Command accuracy and reproducibility:**
+- **Header/frontmatter correctness:**
+
 ### Performance
 - **Hot paths:**
 - **Database query optimization:**
@@ -81,3 +94,6 @@ Use this template to review a PR diff with focused, actionable feedback.
 - [ ] Backward compatible
 - [ ] Feature flagged
 - [ ] Observability added
+- [ ] Instruction files are concise and repository-specific
+- [ ] No absolute local paths or sensitive values in docs
+- [ ] Prompt and skill contracts remain aligned
